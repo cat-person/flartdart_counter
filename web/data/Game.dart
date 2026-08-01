@@ -1,13 +1,21 @@
 import 'dart:math';
 
 class Game {
-  final Player {
-    var stats = Stats();
-  }
+  // final Player {
+  //   var stats = Stats();
+  // }
+  List<Action> actions = ;
 }
 
-class Stats {
+class Stats {}
 
+abstract class Traget {
+
+}
+
+abstract class Action {
+  abstract List<DiceRoll> price;
+  abstract int effect(List<Target> target);
 }
 
 
@@ -17,10 +25,25 @@ class Intelligence {
   }
 }
 
-enum PrimaryStat { endurance, intelligence, speed, strength }
+enum PrimaryStatIds {
+  endurance,
+  intelligence,
+  speed,
+  strength
+} // You'll be given dice
+
+abstract class DiceProvider {
+  String getId();
+  List<Dice> getDice();
+}
+
+class DiceRoll {
+  String statId = "meow";
+  int roll = 0;
+}
 
 class Dice {
-  State
+  String statId;
 
   roll(Random random) {
     return random.nextInt(6);
