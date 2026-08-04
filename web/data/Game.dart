@@ -1,23 +1,14 @@
 import 'dart:math';
+import 'Action.dart';
 
 class Game {
   // final Player {
   //   var stats = Stats();
   // }
-  List<Action> actions = ;
+  List<Action> actions = [];
 }
 
 class Stats {}
-
-abstract class Traget {
-
-}
-
-abstract class Action {
-  abstract List<DiceRoll> price;
-  abstract int effect(List<Target> target);
-}
-
 
 class Intelligence {
   List<Dice> getDice() {
@@ -44,6 +35,8 @@ class DiceRoll {
 
 class Dice {
   String statId;
+
+  Dice({required this.statId});
 
   roll(Random random) {
     return random.nextInt(6);
