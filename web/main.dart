@@ -5,6 +5,7 @@ void main() {
   runApp(const MyApp());
 }
 
+// 1. Define State
 class MyApp extends StatelessWidget {
   const MyApp();
 

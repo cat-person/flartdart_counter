@@ -1,3 +1,5 @@
+import 'sigil.dart';
+
 class Hero {
   Sigil origin;
   List<Sigil> sigils;
@@ -12,3 +14,5 @@ class Hero {
     return result;
   }
 }
+
+abstract class Equipment {}
