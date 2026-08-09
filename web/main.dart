@@ -1,6 +1,7 @@
 import 'package:flartdart/flartdart.dart';
 
 void main() {
+  // Hello cat person
   runApp(MyApp());
 }
 
